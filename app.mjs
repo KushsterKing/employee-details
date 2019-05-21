@@ -27,7 +27,7 @@ app.get('/', async (req, res) => {
         query = {...query, location: {'$regex': req.query.location}}
     }
 
-
+    // Employee.find({profile: /a/});
     const employees = await Employee.find(query);
 
     res.send(JSON.stringify(employees))
