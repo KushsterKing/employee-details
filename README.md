@@ -38,8 +38,57 @@ To run the project and server in watch node <br>
 node --experimental-modules app.mjs
 ```
 
-To see results hit the following api(s) 
+To see results go to the following url and search according to the 
+following data and search with the parameters location, profile and 
+name(first letter should be capital of all the parameters)
 ```
 http://localhost:3000/html
+
+{
+    "name": "Kush Gumber",
+    "email": "kushgumber@gmail.com",
+    "phone": "3874298943",
+    "location": "Bathinda",
+    "company": "BITCS",
+    "profile": "Backend Developer"
+  }, {
+    "name": "Rahul Arora",
+    "email": "kushgumber@gmail.com",
+    "phone": "3874298943",
+    "location": "Faridabad",
+    "company": "BITCS",
+    "profile": "Frontend Developer"
+
+  }, {
+    "name": "Rohit Gupta",
+    "email": "kushgumber@gmail.com",
+    "phone": "3874298943",
+    "location": "Patiala",
+    "company": "BITCS",
+    "profile": "Human Resource"
+
+  }, {
+    "name": "Kaustubh Kaushik",
+    "email": "kushgumber@gmail.com",
+    "phone": "3874298943",
+    "location": "Ghaziabad",
+    "company": "BITCS",
+    "profile": "Full stack developer"
+
+  }, {
+    "name": "Vaibhav Kalra",
+    "email": "kushgumber@gmail.com",
+    "phone": "3874298943",
+    "location": "Noida",
+    "company": "BITCS",
+    "profile": "Mean stack developer"
+  }, {
+    "name": "Akshay Sharma",
+    "email": "kushgumber@gmail.com",
+    "phone": "3874298943",
+    "location": "Gurgaon",
+    "company": "BITCS",
+    "profile": "Mern stack developer"
+  }
 
 ```
