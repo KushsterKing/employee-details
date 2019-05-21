@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+
+<body>
+
+<form id="formId" action="/" method="get">
+    Name:<br>
+    <input type="text" id="name" name="name">
+    <br>
+    Location:<br>
+    <input type="text" id="location" name="location">
+    <br>
+    Profile:<br>
+    <input type="text" id="profile" name="profile">
+    <br><br>
+</form>
+<span id="heading"></span>
+
+<script type="text/javascript">
+    $("#name").on('input',() => {
+        let $form = $( this ),
+            url = $form.attr( 'action' );
+        console.log(url)
+        let posting = $.get( 'http://localhost:3000/', { name: $('#name').val(), profile: $('#profile').val(), location: $('#location').val() } );
+
+        console.log(posting)
+
+        posting.done((data) => {
+            let heading = document.getElementById("heading")
+
+            heading.innerText = data
+
+            console.log(data)
+        })
+    })
+
+    $("#location").on('input',() => {
+        // let $form = $( this ),
+        //     url = $form.attr( 'action' );
+        // console.log(url)
+        let posting = $.get( 'http://localhost:3000/', { name: $('#name').val(), profile: $('#profile').val(), location: $('#location').val() } );
+
+        console.log(posting)
+
+        posting.done((data) => {
+            let heading = document.getElementById("heading")
+
+            heading.innerText = data
+
+            console.log(data)
+        })
+    })
+
+    $("#profile").on('input',() => {
+        let $form = $( this ),
+            url = $form.attr( 'action' );
+        console.log(url)
+        let posting = $.get( 'http://localhost:3000/', { name: $('#name').val(), profile: $('#profile').val(), location: $('#location').val() } );
+
+        console.log(posting)
+
+        posting.done((data) => {
+            let heading = document.getElementById("heading")
+
+            heading.innerText = data
+
+            console.log(data)
+        })
+    })
+</script>
+
+</body>
+</html>
